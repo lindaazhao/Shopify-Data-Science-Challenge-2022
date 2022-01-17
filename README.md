@@ -30,7 +30,7 @@ Result:
 |-|
 | 54 |
 
-
+&nbsp;
 
 **2. What is the last name of the employee with the most orders?** 
 
@@ -58,6 +58,8 @@ Result:
 | LastName | NumOrders |
 |-|-|
 | Peacock | 40 | 
+
+&nbsp;
 
 **3. What product was ordered the most by customers in Germany?**
 
