@@ -83,4 +83,4 @@ LIMIT 1;
 Result:
 | ProductName | NumOrders | ProductID | Country |
 |-|-|-|-|
-| Boston Crab Meat | 160| 40 | Germany |
+| Boston Crab Meat | 160 | 40 | Germany |
