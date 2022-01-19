@@ -36,7 +36,7 @@ Finally, my choice is influenced by the potential uses of this metric. If this n
 
 The median order value is $284.00.
 
-### [Full Question 1 Solution Code](Data-Science-Question-1.py)
+#### [Full Question 1 Solution Code](Data-Science-Question-1.py)
 
 ## Question 2
 
@@ -113,11 +113,8 @@ Result:
 |-|-|-|-|
 | Boston Crab Meat | 160| 40 | Germany |
 
-&nbsp;
+#### [Full Question 2 Solution Code](Data-Science-Question-2.sql)
 
-### [Full Question 2 Solution Code](Data-Science-Question-2.sql)
-
-&nbsp;
 ----------------
 
 ## Appendix: Question 1 Analysis
@@ -131,7 +128,7 @@ Methods used to process data and their results:
 | 4 | Manually filter out orders I thought seemed unreasonable | Mean: 303.16
 | 5 | Determine the 3 measures of central tendency (mode, median, mean) of the original data | Mode: 153.00 <br /> **Median: 284.00** <br /> Mean: 3145.128
 
-Example code for Method 1 (code for all analysis methods is available [here]()):
+Example code for Method 1 (code for all analysis methods is available [here](Data-Science-Question-1.py)):
 ```python
 import numpy as np
 import pandas as pd
