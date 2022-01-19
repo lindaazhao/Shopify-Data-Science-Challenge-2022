@@ -32,11 +32,11 @@ Additionally, my manual processing method that does remove “suspicious” orde
 
 Finally, my choice is influenced by the potential uses of this metric. If this number is shared with the shop owners, it should accurately represent the majority. Otherwise, if the reported AOV is highly skewed by one or two shops or customers, it is less helpful as a decision making tool for shops to compare their performance with others, or adjust their pricing, products, etc. In the presence of strong outliers, the median is highly capable of estimating the central value, thus providing an accurate reference point for shop owners.
 
-
 #### **3. What is its value?**
 
 The median order value is $284.00.
 
+### [Full Question 1 Solution Code](Data-Science-Question-1.py)
 
 ## Question 2
 
@@ -112,6 +112,10 @@ Result:
 | ProductName | NumOrders | ProductID | Country |
 |-|-|-|-|
 | Boston Crab Meat | 160| 40 | Germany |
+
+&nbsp;
+
+### [Full Question 2 Solution Code](Data-Science-Question-2.sql)
 
 &nbsp;
 ----------------
