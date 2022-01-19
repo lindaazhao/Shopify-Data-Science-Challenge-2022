@@ -11,7 +11,7 @@ Given some [sample data](https://docs.google.com/spreadsheets/d/16i38oonuX1y1g7C
 
 On Shopify, we have exactly 100 sneaker shops, and each of these shops sells only one model of shoe. We want to do some analysis of the average order value (AOV). When we look at orders data over a 30 day window, we naively calculate an AOV of $3145.13. Given that we know these shops are selling sneakers, a relatively affordable item, something seems wrong with our analysis.
 
-#### **1. Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.**
+### **1. Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.**
 
 **TL;DR:** Current calculation is heavily skewed to the right due to some data points in order_amount being significantly higher than the rest. I filtered data by removing outliers using the IQR proximity rule and evaluating the median and mode before determining which metric to report. 
 
@@ -23,8 +23,7 @@ I first graphed the given dataset and noticed it was heavily right-skewed in ter
 
 I also looked at the mode and median as alternative ways to represent the average order value. 
 
-
-#### **2. What metric would you report for this dataset?**
+### **2. What metric would you report for this dataset?**
 
 Upon calculating an additional six AOVs based on the described methods, I would report the median order value (order_amount). There are many reasons behind this choice — the primary reason being that no data is removed. Even if some points seem like outliers, it is difficult to confidently determine which orders really are unusual with the provided information. Given this uncertainty, taking the median reduces the direct impact of the orders that highly skew the mean value, while avoiding the need to remove these points altogether. 
 
@@ -32,17 +31,20 @@ Additionally, my manual processing method that does remove “suspicious” orde
 
 Finally, my choice is influenced by the potential uses of this metric. If this number is shared with the shop owners, it should accurately represent the majority. Otherwise, if the reported AOV is highly skewed by one or two shops or customers, it is less helpful as a decision making tool for shops to compare their performance with others, or adjust their pricing, products, etc. In the presence of strong outliers, the median is highly capable of estimating the central value, thus providing an accurate reference point for shop owners.
 
-#### **3. What is its value?**
+
+### **3. What is its value?**
 
 The median order value is $284.00.
 
 #### [Full Question 1 Solution Code](Data-Science-Question-1.py)
 
+&nbsp;
+
 ## Question 2
 
 For this question you’ll need to use SQL. [Follow this link](https://www.w3schools.com/SQL/TRYSQL.ASP?FILENAME=TRYSQL_SELECT_ALL) to access the data set required for the challenge. Please use queries to answer the following questions. Paste your queries along with your final numerical answers below.
 
-#### **1. How many orders were shipped by Speedy Express in total?**
+### **1. How many orders were shipped by Speedy Express in total?**
 
 Query:
 ```sql
@@ -60,7 +62,7 @@ Result:
 
 &nbsp;
 
-#### **2. What is the last name of the employee with the most orders?** 
+### **2. What is the last name of the employee with the most orders?** 
 
 Query:
 ```sql
@@ -89,7 +91,7 @@ Result:
 
 &nbsp;
 
-#### **3. What product was ordered the most by customers in Germany?**
+### **3. What product was ordered the most by customers in Germany?**
 
 Query:
 ```sql
@@ -114,6 +116,8 @@ Result:
 | Boston Crab Meat | 160| 40 | Germany |
 
 #### [Full Question 2 Solution Code](Data-Science-Question-2.sql)
+
+&nbsp;
 
 ----------------
 
