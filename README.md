@@ -13,6 +13,8 @@ On Shopify, we have exactly 100 sneaker shops, and each of these shops sells onl
 
 #### **1. Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.**
 
+**TL;DR:** Current calculation is heavily skewed to the right due to some data points in order_amount being significantly higher than the rest. I filtered data by removing outliers using the IQR proximity rule and evaluating the median and mode before determining which metric to report. 
+
 The current AOV calculation simply takes the average (mean) of the “order_amount” column. Doing so in this case fails to account for major outliers in the data that skew this average. In particular, User 607 has repeated orders totalling over $700,000, and Shop 78 sells a shoe worth over $25,000. These order amounts are significantly higher than the next highest amount ($1,760). 
 
 I used several other methods of evaluating the data which are detailed in the [analysis section](#appendix-question-1-analysis). In general, the analysis consisted of two approaches: removing outliers and using other central tendency measures. 
@@ -21,12 +23,10 @@ I first graphed the given dataset and noticed it was heavily right-skewed in ter
 
 I also looked at the mode and median as alternative ways to represent the average order value. 
 
-**TL;DR:** Current calculation is heavily skewed to the right due to some data points in order_amount being significantly higher than the rest. I filtered data by removing outliers using the IQR proximity rule and evaluated other averages. 
-
 
 #### **2. What metric would you report for this dataset?**
 
-Upon calculating an additional six AOVs based on the methods described, I would report the median order value (order_amount). There are many reasons behind this choice—the primary reason being that no data is removed. Even if some points seem like outliers, it is difficult to confidently determine which orders really are “fake” with the provided information. Given this uncertainty, taking the median reduces the direct impact of the orders that highly skew the mean value, while avoiding the need to remove these points altogether. 
+Upon calculating an additional six AOVs based on the described methods, I would report the median order value (order_amount). There are many reasons behind this choice — the primary reason being that no data is removed. Even if some points seem like outliers, it is difficult to confidently determine which orders really are unusual with the provided information. Given this uncertainty, taking the median reduces the direct impact of the orders that highly skew the mean value, while avoiding the need to remove these points altogether. 
 
 Additionally, my manual processing method that does remove “suspicious” orders (outliers) results in a similar value (within 7%) as the median order value. This further validates my choice of reporting the median as the AOV, as it agrees with other potential AOVs that account for outliers.
 
