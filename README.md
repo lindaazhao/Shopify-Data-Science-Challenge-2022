@@ -3,7 +3,7 @@
 
 - [Question 1](#question-1)
 - [Question 2](#question-2)
-- [Appendix: Question 1 Analysis](#appendix:-question-1-analysis)
+- [Appendix: Question 1 Analysis](#appendix-question-1-analysis)
 
 ## Question 1
 
@@ -168,4 +168,6 @@ print('\nOrder_Amount Processed with Method 1:\n', iqr_df['order_amount'].descri
 
 Output plot for Method 1 code above:
 
+![Graph of original data and IQR processed data for method 1](assets/boxplot_light.png#gh-light-mode-only)
+![Graph of original data and IQR processed data for method 1](assets/boxplot_dark.png#gh-dark-mode-only)
 

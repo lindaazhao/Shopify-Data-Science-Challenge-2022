@@ -6,7 +6,7 @@ import seaborn as sns
 
 
 # Load & describe dataset
-df = pd.read_csv('data_set.csv')
+df = pd.read_csv('assets/data_set.csv')
 print('Order_Amount Column Description:\n', df['order_amount'].describe(), sep = '')
 # Notice that the stdev is much larger than the mean
 
